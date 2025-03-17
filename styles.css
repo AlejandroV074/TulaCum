@@ -1,5 +1,5 @@
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Poppins", Arial, sans-serif; /* Fuente más legible */
   background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
   background-size: 400% 400%;
   animation: gradientBG 5s infinite alternate;
