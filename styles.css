@@ -1,11 +1,15 @@
+/* Importar Poppins para una mejor legibilidad */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
 body {
-  font-family: "Poppins", Arial, sans-serif; /* Fuente más legible */
+  font-family: "Poppins", Arial, sans-serif;
   background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
   background-size: 400% 400%;
   animation: gradientBG 5s infinite alternate;
   text-align: center;
   color: white;
   padding: 20px;
+  margin: 0;
 }
 
 @keyframes gradientBG {
@@ -22,15 +26,18 @@ body {
   padding: 20px;
   border-radius: 15px;
   display: inline-block;
+  width: 90%;
+  max-width: 600px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-shadow: 3px 3px 0px #ff0;
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
@@ -38,14 +45,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 img {
-  width: 200px;
+  width: 45%;
+  max-width: 200px;
   border: 5px solid white;
   border-radius: 50%;
-  margin: 20px 0;
 }
 
 .friend-img {
@@ -57,14 +65,41 @@ img {
 button {
   background-color: yellow;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background 0.3s;
+  margin-top: 15px;
 }
 
 button:hover {
   transform: scale(1.1);
+  background-color: orange;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 80%;
+    max-width: 180px;
+  }
+
+  .friend-img {
+    width: 80%;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
 }
