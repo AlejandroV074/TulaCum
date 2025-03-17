@@ -1,0 +1,70 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+  background-size: 400% 400%;
+  animation: gradientBG 5s infinite alternate;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 0px #ff0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  width: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.friend-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
